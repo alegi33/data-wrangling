@@ -52,12 +52,14 @@ These are the steps that were taken when cleaning the dog stages columns:
 All the tables are merged into one using left outer join because we want the merged table to have all of the tweet_archive records even when there is not matching record found in the image_pred and rt_fave table.
 
 In the final step, I reviewed all the data and considered which ones that may not be useful in the data analysis, as follow:
-• in_reply_to_status_id
-• in_reply_to_user_id
-• retweeted_status_id
-• retweeted_status_user_id
-• retweeted_status_timestamp • rating_numerator
-• rating_denominator • name
+- in_reply_to_status_id
+- in_reply_to_user_id
+- retweeted_status_id
+- retweeted_status_user_id
+- retweeted_status_timestamp
+- rating_numerator
+- rating_denominator
+- name
 
 I dropped those columns and saved the dataset into a .csv file, twitter_archive_master.csv.
 
